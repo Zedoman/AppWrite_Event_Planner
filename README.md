@@ -1,7 +1,7 @@
 # Hackathon Submission: Event Planner
 
 ## GitHub handles of Team Members  
-- [@Zedoman](https://github.com/Zedoman)
+- [@Avradeep](https://github.com/Zedoman)
 
 ## Project Title
 Event Planner
@@ -30,9 +30,8 @@ The inspiration behind **Event Planner** was the need for a simple yet powerful 
 [Event Planner GitHub Repo](https://github.com/Zedoman/Event-Planner)
 
 ## Demo Video/Photos/Link
-Check out a demo of the project [here]() 
+Check out a demo of the project here:
 
-![Event Cards](https://link-to-screenshot.com)
 
 ## Anything Else You Want To Share With Us?
 This project is built with scalability in mind, offering a clean interface with the potential to integrate more advanced features like calendar synchronization and notifications. We plan to continue iterating on this project by adding more event management tools and expanding the use of AI to make it even smarter.
