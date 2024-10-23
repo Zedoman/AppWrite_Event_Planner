@@ -33,5 +33,10 @@ The inspiration behind **Event Planner** was the need for a simple yet powerful 
 Check out a demo of the project here:
 
 
+https://github.com/user-attachments/assets/5e872039-63c0-49b0-9d1c-1d83c9a80b93
+
+
+
+
 ## Anything Else You Want To Share With Us?
 This project is built with scalability in mind, offering a clean interface with the potential to integrate more advanced features like calendar synchronization and notifications. We plan to continue iterating on this project by adding more event management tools and expanding the use of AI to make it even smarter.
