@@ -27,7 +27,7 @@ The inspiration behind **Event Planner** was the need for a simple yet powerful 
 - **Appwrite Storage**: Event images or related media could be stored using Appwrite Storage for future feature expansions.
 
 ## Project Repo  
-[Event Planner GitHub Repo](https://github.com/Zedoman/Event-Planner)
+[Event Planner GitHub Repo](https://github.com/Zedoman/AppWrite_Event_Planner)
 
 ## Demo Video/Photos/Link
 Check out a demo of the project here:
