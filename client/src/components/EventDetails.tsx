@@ -8,6 +8,7 @@ import { Event } from '../interfaces';
 import { deleteEvent as deleteEventAction } from '../redux/eventsSlice';
 import { Button } from './Button';
 import { Chip } from './Chip';
+import { FacebookShareButton, TwitterShareButton, LinkedinShareButton } from 'react-share';
 
 interface EventDetailsProps {
   className?: string;
@@ -20,6 +21,9 @@ export function EventDetails({ className }: EventDetailsProps) {
   const { databases } = useAppwrite(); // Use Appwrite client from hook
   const [event, setEvent] = useState<Event | null>(null); // State to store event details
   const [loading, setLoading] = useState(true); // Loading state
+
+  const eventUrl = window.location.href;
+
 
   useEffect(() => {
     const fetchEventDetails = async () => {
@@ -127,6 +131,21 @@ export function EventDetails({ className }: EventDetailsProps) {
           >
             Delete event
           </Button>
+        </div>
+        {/* Add Social Sharing Buttons here */}
+        <div className="mt-8">
+          <h3 className="text-lg font-semibold mb-4">Share this event:</h3>
+          <div className="flex gap-4">
+            <FacebookShareButton url={eventUrl}>
+              <Button style={{ backgroundColor: '#3b5998', color: 'white' }}>Share on Facebook</Button>
+            </FacebookShareButton>
+            <TwitterShareButton url={eventUrl} title={title}>
+              <Button style={{ backgroundColor: '#1DA1F2', color: 'white' }}>Share on Twitter</Button>
+            </TwitterShareButton>
+            <LinkedinShareButton url={eventUrl} summary={description}>
+              <Button style={{ backgroundColor: '#0077b5', color: 'white' }}>Share on LinkedIn</Button>
+            </LinkedinShareButton>
+          </div>
         </div>
       </div>
     </div>
