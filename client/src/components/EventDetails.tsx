@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useAppwrite } from '../hooks/appWrite'; // Use the Appwrite hook
-import { formatDateTime, getChipVariant } from '../helpers';
+import { getChipVariant } from '../helpers';
 import { Event } from '../interfaces';
 import { deleteEvent as deleteEventAction } from '../redux/eventsSlice';
 import { Button } from './Button';
@@ -88,7 +88,6 @@ export function EventDetails({ className }: EventDetailsProps) {
   const { title, description, date, time, location, category, picture, priority } = event;
   
   // Use EventCard's logic for handling date and time
-  const eventDateTime = new Date(`${date}T${time}:00`);
   const [day, month, year] = date.split('/');
   const formattedDate = new Date(`${year}-${month}-${day}`);
 
